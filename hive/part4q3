@@ -1,0 +1,4 @@
+SELECT rating, COUNT(userId) AS cnt
+FROM ratings
+GROUP BY rating
+ORDER BY rating;

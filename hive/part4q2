@@ -1,0 +1,5 @@
+SELECT m.movieId, fi.five_cnt, fo.four_cnt
+FROM movies AS m
+JOIN five_star AS fi ON (m.movieId = fi.movieId)
+JOIN four_star AS fo ON (m.movieId = fo.movieId)
+ORDER BY fi.five_cnt DESC, fo.four_cnt DESC;
